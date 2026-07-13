@@ -73,6 +73,13 @@
           "support/faq",
           "support/contact"
         ]
+      },
+      {
+        "group": "Changelog",
+        "icon": "megaphone",
+        "pages": [
+          "changelog"
+        ]
       }
     ]
   },
