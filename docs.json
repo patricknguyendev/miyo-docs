@@ -1,53 +1,98 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "theme": "palm",
+  "name": "Miyo Help",
+  "description": "Practical guides for managing money on your own or with your household in Miyo.",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#7C3AED",
+    "light": "#A78BFA",
+    "dark": "#8B5CF6"
+  },
+  "icons": {
+    "library": "lucide"
   },
   "favicon": "/favicon.svg",
-  "navigation": {
-    "pages": [
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
+  "styling": {
+    "eyebrows": "breadcrumbs",
+    "codeblocks": "system"
+  },
+  "navigation": {
+    "pages": [
+      {
+        "group": "Start here",
+        "icon": "sparkles",
+        "pages": [
+          "index",
+          "getting-started/quickstart",
+          "getting-started/navigate-miyo"
+        ]
+      },
+      {
+        "group": "Accounts and transactions",
+        "icon": "landmark",
+        "pages": [
+          "accounts/connect-and-manage-accounts",
+          "transactions/manage-transactions",
+          "transactions/import-transactions"
+        ]
+      },
+      {
+        "group": "Plan your money",
+        "icon": "chart-pie",
+        "pages": [
+          "budgets/overview",
+          "budgets/choose-budget-mode",
+          "budgets/create-and-manage-budget",
+          "budgets/category-targets",
+          "goals/create-savings-goal",
+          "recurring/review-recurring",
+          "debt/debt-workspace"
+        ]
+      },
+      {
+        "group": "Household and privacy",
+        "icon": "shield-check",
+        "pages": [
+          "household/setup-household",
+          "household/account-visibility",
+          "privacy/privacy-center",
+          "household/money-date"
+        ]
+      },
+      {
+        "group": "Settings and support",
+        "icon": "life-buoy",
+        "pages": [
+          "settings/security-and-mfa",
+          "settings/notifications",
+          "support/troubleshooting",
+          "support/faq",
+          "support/contact"
+        ]
+      }
+    ]
+  },
+  "redirects": [
+    {
+      "source": "/goals/funding-styles",
+      "destination": "/budgets/category-targets"
+    }
+  ],
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@joinmiyo.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Open Miyo",
+      "href": "https://joinmiyo.com/dashboard"
     }
   },
   "contextual": {
@@ -55,18 +100,53 @@
       "copy",
       "view",
       "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+      "claude"
     ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+      "website": "https://joinmiyo.com"
+    },
+    "links": [
+      {
+        "header": "Miyo",
+        "items": [
+          {
+            "label": "Open dashboard",
+            "href": "https://joinmiyo.com/dashboard"
+          },
+          {
+            "label": "Pricing",
+            "href": "https://joinmiyo.com/pricing"
+          }
+        ]
+      },
+      {
+        "header": "Trust",
+        "items": [
+          {
+            "label": "Privacy policy",
+            "href": "https://joinmiyo.com/privacy"
+          },
+          {
+            "label": "Terms of service",
+            "href": "https://joinmiyo.com/terms"
+          }
+        ]
+      },
+      {
+        "header": "Support",
+        "items": [
+          {
+            "label": "Contact support",
+            "href": "mailto:support@joinmiyo.com"
+          },
+          {
+            "label": "Troubleshooting",
+            "href": "/support/troubleshooting"
+          }
+        ]
+      }
+    ]
   }
 }

@@ -1,0 +1,45 @@
+---
+title: "Troubleshoot common problems"
+description: "Work through account connection, transaction, balance, and sign-in issues."
+sidebarTitle: "Troubleshooting"
+keywords: ["troubleshooting", "sync", "missing transactions", "sign in"]
+---
+
+Start by confirming whether the issue affects one account, one page, or your entire Miyo session. This makes the next step safer and faster.
+
+<AccordionGroup>
+  <Accordion title="A connected account is not updating" icon="refresh-cw">
+    1. Open **Accounts** and check whether the issue affects one institution or every connection.
+    2. Look for a reconnect or attention-required message.
+    3. Compare the last successful activity in Miyo with the institution's own site.
+    4. Complete any institution verification request, then retry the connection.
+
+    Avoid disconnecting immediately. A disconnect stops future refreshes and may make diagnosis harder.
+  </Accordion>
+  <Accordion title="Transactions are missing or duplicated" icon="receipt-text">
+    Confirm the date range, account filter, and transaction type filter. For imported data, check whether the same file was submitted more than once. Compare several records with the source before making broad edits.
+  </Accordion>
+  <Accordion title="A balance looks wrong" icon="scale">
+    Check whether you are comparing current, pending, or statement balances. Review the newest transactions and the account's last refresh. For a manual account, confirm that every balance-changing entry was recorded with the correct sign.
+  </Accordion>
+  <Accordion title="The budget does not match spending" icon="chart-pie">
+    Review uncategorized transactions, excluded transactions, the selected month, and the active budget mode. Account balances and budget amounts represent different things and do not need to match.
+  </Accordion>
+  <Accordion title="I cannot sign in" icon="log-in">
+    Confirm the email address, then use the password-reset flow if needed. Check for an MFA prompt or expired session message. If the reset email does not arrive, review spam filters before requesting another message.
+  </Accordion>
+</AccordionGroup>
+
+## Before contacting support
+
+Include:
+
+- The page where the problem occurred
+- What you expected and what happened instead
+- Approximate time and timezone
+- Browser and device type
+- Whether the issue affects one account or several
+
+<Warning>
+  Do not send passwords, verification codes, recovery codes, bank credentials, access tokens, or full account numbers.
+</Warning>

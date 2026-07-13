@@ -1,33 +1,45 @@
-> **First-time setup**: Customize this file for your project. Prompt the user to customize this file for their project.
-> For Mintlify product knowledge (components, configuration, writing standards),
-> install the Mintlify skill: `npx skills add https://mintlify.com/docs`
-
-# Documentation project instructions
+# Miyo documentation instructions
 
 ## About this project
 
-- This is a documentation site built on [Mintlify](https://mintlify.com)
-- Pages are MDX files with YAML frontmatter
-- Configuration lives in `docs.json`
-- Use the Mintlify MCP server, `https://mcp.mintlify.com`, to edit content and settings via MCP
-- Use the Mintlify docs MCP server, `https://www.mintlify.com/docs/mcp`, to query information about using Mintlify via MCP
+- This repository contains the customer-facing Miyo Help Center built on Mintlify.
+- Pages are MDX files with YAML frontmatter.
+- Site configuration and navigation live in `docs.json`.
+- Use the Mintlify skill and current Mintlify documentation for platform behavior.
+- The Miyo application repository is the source of truth for product behavior.
 
 ## Terminology
 
-{/* Add product-specific terms and preferred usage */}
-{/* Example: Use "workspace" not "project", "member" not "user" */}
+- Use **Miyo**, not Imperium, in customer-facing content.
+- Use **household member** when the behavior is not limited to a romantic partner.
+- Use **account** for a financial account and **Miyo account** for a user's login identity.
+- Use **Budget** and **Privacy** when referring to those named navigation areas.
+- Use **Simple** and **Advanced** for the two budget modes.
 
-## Style preferences
+## Style
 
-{/* Add any project-specific style rules below */}
-
-- Use active voice and second person ("you")
-- Keep sentences concise — one idea per sentence
-- Use sentence case for headings
-- Bold for UI elements: Click **Settings**
-- Code formatting for file names, commands, paths, and code references
+- Use active voice and second person.
+- Keep sentences concise and use sentence case for headings.
+- Bold UI labels, such as **Accounts** or **Create goal**.
+- Explain a concept before giving procedural steps.
+- Avoid marketing superlatives and financial advice.
+- Use root-relative links without file extensions for internal pages.
+- Mark uncertain behavior with an MDX TODO comment.
 
 ## Content boundaries
 
-{/* Define what should and shouldn't be documented */}
-{/* Example: Don't document internal admin features */}
+- Document customer-visible, generally available behavior.
+- Do not expose internal admin, diagnostics, feature-flag, security-control, vendor-cost, or operational details.
+- Do not promise that balances, transactions, projections, or detected recurring charges are complete or current.
+- Never include real customer financial data, credentials, access tokens, verification codes, or secrets.
+- Distinguish product organization and projections from financial, tax, investment, legal, or credit advice.
+
+## Verification
+
+Before publishing, run:
+
+```powershell
+mint validate
+mint broken-links
+mint a11y
+```
