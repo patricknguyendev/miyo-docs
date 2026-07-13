@@ -1,0 +1,43 @@
+---
+title: "Connect and manage accounts"
+description: "Add bank-connected or manual accounts and understand how Miyo handles balances."
+sidebarTitle: "Manage accounts"
+keywords: ["accounts", "Plaid", "bank connection", "manual account"]
+---
+
+Accounts give Miyo the balances and transaction history used throughout your dashboard, spending views, and plan. You can connect an institution or maintain an account manually.
+
+<Tabs>
+  <Tab title="Connect an institution">
+    1. Open **Accounts**.
+    2. Select the option to connect an institution.
+    3. Continue through the secure connection flow and choose the accounts you want to add.
+    4. Return to Miyo and allow the first sync to finish.
+
+    Miyo uses Plaid where bank connection is enabled. You enter institution credentials in the provider's connection flow, not directly into Miyo.
+  </Tab>
+  <Tab title="Add an account manually">
+    1. Open **Accounts** and select **Add account**.
+    2. Choose an account type.
+    3. Enter a name, current balance, and any optional details you want to track.
+    4. Save the account, then add or import its transactions.
+  </Tab>
+</Tabs>
+
+## Supported account details
+
+Depending on the account type, Miyo can track balances, credit limits, APR, institution details, notes, and account status. Connected and manual accounts can appear together.
+
+## Edit or archive an account
+
+Open an account to review its details, then select the edit action. Miyo archives accounts instead of permanently erasing their history from ordinary account management flows.
+
+<Warning>
+  Disconnecting a linked institution stops future refreshes. Previously imported records may remain until you delete them or request account deletion.
+</Warning>
+
+## Household visibility
+
+If you use Miyo with a household, adding an account and sharing it are separate decisions. Open **Privacy** to choose whether the account is shared, private, or hidden.
+
+[Understand account visibility](/household/account-visibility)

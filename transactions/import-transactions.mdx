@@ -1,0 +1,45 @@
+---
+title: "Import transactions"
+description: "Bring transaction history into Miyo from a CSV file or a YNAB export."
+keywords: ["CSV", "import", "YNAB", "transactions"]
+---
+
+Importing is useful when you start with a manual account, move from another budgeting tool, or need history that a connection did not provide.
+
+## Before you import
+
+- Create the destination account in Miyo.
+- Export transactions from your institution or budgeting tool.
+- Keep the original export unchanged until the import succeeds.
+- Review the file for dates, descriptions, and amounts you recognize.
+
+## Supported CSV starting points
+
+Miyo includes mappings for Chase, Bank of America, Wells Fargo, Capital One, and generic CSV layouts. The importer validates file size, row count, field length, and unsafe spreadsheet formulas.
+
+<Steps>
+  <Step title="Open the importer">
+    Open **Transactions**, then select **Import transactions** from the add menu or import page.
+  </Step>
+  <Step title="Choose the source and account">
+    Select the matching institution format or the generic mapping, then choose the Miyo account that should receive the records.
+  </Step>
+  <Step title="Review the preview">
+    Confirm that dates, descriptions, and positive or negative amounts are interpreted correctly before continuing.
+  </Step>
+  <Step title="Complete and verify">
+    Finish the import, then compare several records and the account balance with the original source.
+  </Step>
+</Steps>
+
+## Duplicate handling
+
+Miyo checks a combination of transaction date, amount, and description to reduce duplicate imports. Similar legitimate transactions can still require review.
+
+<Warning>
+  Do not repeatedly import the same file while an earlier attempt is still processing. Check the transaction list and import history first.
+</Warning>
+
+## Moving from YNAB
+
+Choose the dedicated **Import from YNAB** path from the transaction import page. Preserve your original YNAB export as a backup until you have reviewed the result in Miyo.
