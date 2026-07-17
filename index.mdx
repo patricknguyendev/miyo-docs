@@ -1,17 +1,18 @@
 ---
 title: "Miyo Help Center"
-description: "Miyo Help Center guides for accounts, budgets, savings goals, transactions, debt, household sharing, privacy, and support for the Miyo finance app."
+description: "Miyo Help Center guides for accounts, budgets, savings goals, transactions, debt, household sharing, privacy, security, and support."
+icon: "house"
 mode: "wide"
 keywords: ["Miyo", "help", "personal finance", "household finance"]
 ---
 
 ## Money guidance that respects what stays yours
 
-Miyo gives you one place to understand your money while keeping control over what you share. Start with the path that matches what you want to do today.
+Miyo gives you one place to understand your money while keeping control over what you share. Start with the task that matches what you want to do today.
 
 <Columns cols={3}>
   <Card title="Set up Miyo" icon="rocket" href="/getting-started/quickstart" cta="Start here" arrow="true">
-    Add your first account, review your dashboard, and choose whether you use Miyo solo or with a household.
+    Add your first account, review your transactions, and create a monthly plan.
   </Card>
   <Card title="Build a money plan" icon="chart-pie" href="/budgets/choose-budget-mode" cta="Choose a budget mode" arrow="true">
     Use monthly limits or rollover envelopes, then track savings goals separately from recurring category targets.
@@ -21,26 +22,43 @@ Miyo gives you one place to understand your money while keeping control over wha
   </Card>
 </Columns>
 
-## Popular guides
+## Add and organize your data
 
 <Columns cols={2}>
+  <Card title="Choose how to add data" icon="database" href="/getting-started/choose-your-first-data-path" horizontal>
+    Compare bank connection, CSV import, YNAB import, and manual entry.
+  </Card>
   <Card title="Connect or add an account" icon="landmark" href="/accounts/connect-and-manage-accounts" horizontal>
     Connect a supported institution or track an account manually.
   </Card>
+  <Card title="Review transactions" icon="receipt-text" href="/transactions/review-and-categorize" horizontal>
+    Categorize recent activity and correct transfers, income, refunds, and expenses.
+  </Card>
   <Card title="Import transactions" icon="file-up" href="/transactions/import-transactions" horizontal>
-    Bring in a CSV export or move transaction history from YNAB.
+    Bring in a CSV export or supported transaction history from YNAB.
   </Card>
-  <Card title="Create a savings goal" icon="target" href="/goals/create-savings-goal" horizontal>
-    Track progress toward one total amount, with an optional target date.
+</Columns>
+
+## Popular guides
+
+<Columns cols={3}>
+  <Card title="Create a savings goal" icon="target" href="/goals/create-savings-goal">
+    Track progress toward one total finish line, with an optional target date.
   </Card>
-  <Card title="Set a category target" icon="repeat-2" href="/budgets/category-targets" horizontal>
+  <Card title="Set a category target" icon="repeat-2" href="/budgets/category-targets">
     Choose whether to add another amount or refill what remains available.
   </Card>
-  <Card title="Review recurring charges" icon="calendar-sync" href="/recurring/review-recurring" horizontal>
+  <Card title="Review recurring charges" icon="calendar-sync" href="/recurring/review-recurring">
     Understand charges Miyo detects from transaction history.
   </Card>
-  <Card title="Fix a connection issue" icon="wrench" href="/support/troubleshooting" horizontal>
-    Work through stale balances, missing transactions, and sign-in problems.
+  <Card title="Fix a bank connection" icon="refresh-cw" href="/troubleshooting/bank-sync">
+    Work through stale balances, missing transactions, and reconnect requests.
+  </Card>
+  <Card title="Secure your Miyo account" icon="lock-keyhole" href="/account/secure-your-account">
+    Use multi-factor authentication, recovery codes, and session controls.
+  </Card>
+  <Card title="Contact support" icon="life-buoy" href="/support/contact-support">
+    Send product, privacy, or security questions to the right Miyo team.
   </Card>
 </Columns>
 

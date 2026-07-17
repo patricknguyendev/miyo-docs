@@ -1,56 +1,78 @@
 ---
-title: "Get started with Miyo"
-description: "Set up Miyo from a new account: choose individual or household use, add your first account, review transactions, and build an initial monthly plan."
-sidebarTitle: "Get started"
+title: "Set up Miyo"
+description: "Set up Miyo from a new account, add financial data, review transactions, and build a monthly plan you recognize."
+sidebarTitle: "Set up Miyo"
 keywords: ["getting started", "setup", "first account"]
+icon: "rocket"
 ---
 
-Miyo becomes useful once it has an account and enough transaction history to show where your money is going. You can start manually and connect a bank later.
+You can start using Miyo by yourself. A household and bank connection are optional, so choose the setup that matches how you want to work today.
+
+## Before you begin
+
+You need a Miyo account and access to the email address you used to sign up. If you plan to import data, also have either a CSV export from your bank or a supported YNAB export ready.
 
 <Steps>
   <Step title="Choose how you use Miyo">
     During setup, choose **On my own** for a private individual workspace or **With a partner / household** when you plan to collaborate.
 
-    You can review this choice later from your relationship settings.
+    You can review this choice later from your household settings.
   </Step>
-  <Step title="Add your first account">
-    Open **Accounts**. Connect a supported institution for synced balances and transactions, or add a manual account when you prefer to enter activity yourself.
+  <Step title="Add your first financial account">
+    Open **Accounts**, then choose one path:
 
-    [Learn about accounts](/accounts/connect-and-manage-accounts)
-  </Step>
-  <Step title="Review your transactions">
-    Open **Transactions** to search, filter, categorize, or add notes. If you start with a manual account, you can add transactions individually or import a CSV file.
+    - **Connect Bank** to link an available institution through Plaid.
+    - **Import CSV** to create an account and upload transactions from a file.
+    - **Open YNAB import** to bring in a supported YNAB export.
+    - **Add manually** to track an account without a bank connection.
 
-    [Manage transactions](/transactions/manage-transactions)
+    See [Choose how to add your data](/getting-started/choose-your-first-data-path) if you are unsure.
   </Step>
-  <Step title="Build a monthly plan">
-    Open **Budget**, choose **Monthly budget**, and select the mode that matches how much structure you want:
+  <Step title="Check the account balance">
+    Confirm that the balance and account type match your financial institution. Edit a manual account if its starting balance is wrong.
+
+    <Warning>
+      A linked balance can be delayed by the institution or data provider. Use your bank as the source of truth for time-sensitive decisions.
+    </Warning>
+  </Step>
+  <Step title="Review and categorize transactions">
+    Open **Transactions**. Search for recent activity, assign categories to uncategorized items, and correct any transfer, income, refund, or expense that is classified incorrectly.
+  </Step>
+  <Step title="Create your monthly budget">
+    Open **Budget**, select **Monthly budget**, and choose the mode that matches the structure you want:
 
     - **Simple** uses monthly category limits.
     - **Advanced** uses rollover envelopes, groups, and savings envelopes.
 
-    [Compare budget modes](/budgets/choose-budget-mode)
+    Add amounts for the categories you want to plan. Start with required bills and everyday spending; you can refine the plan later.
   </Step>
-  <Step title="Set your privacy before sharing">
-    If you join a household, open **Privacy** and review every account's visibility. Use the partner-view preview before relying on household totals.
-
-    [Understand account visibility](/household/account-visibility)
+  <Step title="Add a savings goal">
+    Switch to **Savings goals** and create a goal for a longer-term priority such as an emergency fund or vacation. New goals start at \$0, so record any amount you already saved as a contribution after creating the goal.
+  </Step>
+  <Step title="Review privacy before sharing">
+    Stay solo, or open **Settings → Household** to invite a partner. Joining a household does not make every account visible automatically. Open **Privacy** and review every account's visibility before relying on household totals.
   </Step>
 </Steps>
 
 <Check>
-  You have a useful starting point when your dashboard shows at least one account, recent transactions, and a monthly plan you recognize.
+  Your setup is useful when your account totals look reasonable, recent transactions have categories, and the current month has a plan you understand.
 </Check>
 
-## Continue from here
+## Keep your plan current
 
-Use **Savings goals** inside **Budget** when you want to track progress toward a finish line instead of planning monthly spending.
+- Review new transactions at least once a week.
+- Check linked-account errors before relying on a balance.
+- Update manual account balances when statements arrive.
+- Revisit your monthly budget when income or bills change.
 
-<Columns cols={2}>
-  <Card title="Create a savings goal" icon="target" href="/goals/create-savings-goal">
-    Track progress toward one total finish line, with an optional target date.
+<Columns cols={3}>
+  <Card title="Learn the dashboard" icon="layout-dashboard" href="/getting-started/navigate-miyo">
+    Find the main areas for accounts, activity, planning, privacy, and settings.
   </Card>
-  <Card title="Set up your household" icon="users" href="/household/setup-household">
+  <Card title="Compare budget modes" icon="chart-pie" href="/budgets/choose-budget-mode">
+    Choose between Simple monthly limits and Advanced rollover envelopes.
+  </Card>
+  <Card title="Set up a household" icon="users" href="/household/setup-household">
     Invite another person and understand what changes after they join.
   </Card>
 </Columns>

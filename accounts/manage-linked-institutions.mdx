@@ -1,0 +1,50 @@
+---
+title: "Manage linked institutions"
+description: "Manage linked financial institutions in Miyo by syncing accounts, resolving reconnect requests, reviewing access, or disconnecting a connection."
+icon: "link"
+---
+
+Use **Settings → Linked accounts** or the connections panel on **Accounts** to review each Plaid institution and the accounts it supplies.
+
+## Understand the status
+
+Each institution can show its current health, last successful sync, and imported accounts. A recent timestamp does not guarantee that your financial institution has posted every pending transaction.
+
+## Available actions
+
+<AccordionGroup>
+  <Accordion title="Sync now" icon="refresh-cw">
+    Requests a new sync for the institution. The action can take time, and newly imported transactions may appear after the account summary updates.
+  </Accordion>
+  <Accordion title="Reconnect" icon="plug-zap">
+    Opens Plaid so you can repair an expired login, changed password, new multi-factor challenge, or institution consent request.
+  </Accordion>
+  <Accordion title="Update accounts" icon="list-checks">
+    When available, reopens the institution connection so you can review which accounts Miyo should import.
+  </Accordion>
+  <Accordion title="Disconnect institution" icon="unlink">
+    Removes the live Plaid connection and stops future syncs for every Miyo account listed under that institution.
+  </Accordion>
+</AccordionGroup>
+
+## Disconnect an institution
+
+<Steps>
+  <Step title="Review all affected accounts">
+    Expand the institution and note every account listed. Disconnect applies to the institution, not only the row you most recently viewed.
+  </Step>
+  <Step title="Choose Disconnect institution">
+    Open the institution menu, select **Disconnect institution**, and read the confirmation message.
+  </Step>
+  <Step title="Confirm Disconnect">
+    Confirm only when you want all future Plaid syncs for that institution to stop.
+  </Step>
+</Steps>
+
+<Warning>
+  Disconnecting stops future syncs. It does not automatically erase transactions already imported into Miyo. Use the available reset-data or account-deletion controls if you also want to remove stored records, or contact support for help.
+</Warning>
+
+<Card title="Troubleshoot bank sync" icon="wrench" href="/troubleshooting/bank-sync">
+  Decide when to wait, sync, reconnect, or contact support.
+</Card>

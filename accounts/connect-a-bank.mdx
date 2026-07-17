@@ -1,0 +1,60 @@
+---
+title: "Connect a bank"
+description: "Connect a supported financial institution to Miyo through Plaid, choose the accounts to add, and understand what financial data Miyo receives."
+icon: "landmark"
+---
+
+Connecting a bank lets Miyo import supported account details and transactions without receiving your online banking password.
+
+<Info>
+  Bank sync may require a paid plan, private-beta access, or Plaid availability. If **Connect Bank** shows **Bank Sync Pending**, use a [manual account](/accounts/add-a-manual-account) or [CSV import](/transactions/import-a-csv) for now.
+</Info>
+
+## What Miyo requests
+
+Miyo uses Plaid Link so you choose the institution and accounts you want to share. The connection requests account and transaction information for budgeting, spending, and account summaries.
+
+- Miyo does not receive or store your online banking username or password.
+- Miyo is read-only and cannot move, hold, or transfer money.
+- You can disconnect an institution from Miyo later.
+
+## Connect your accounts
+
+<Steps>
+  <Step title="Start from Accounts">
+    Open **Accounts** and select **Connect Bank**.
+  </Step>
+  <Step title="Review the disclosure">
+    Read the **Connect with Plaid** disclosure, then select **Continue**. Select **Cancel** if you do not want to share account information.
+  </Step>
+  <Step title="Choose your institution">
+    In Plaid Link, search for your financial institution and complete the institution's sign-in and verification steps.
+  </Step>
+  <Step title="Choose accounts">
+    Select only the accounts you want to add to Miyo, then approve the connection.
+  </Step>
+  <Step title="Wait for the first import">
+    Return to **Accounts**. Miyo imports transactions in the background, so the account can appear before all recent activity does.
+  </Step>
+</Steps>
+
+<Check>
+  A successful connection shows the institution under **Accounts** or **Settings → Linked accounts**. Review the balance and recent transactions before using them in your plan.
+</Check>
+
+## If your institution is missing
+
+Plaid availability varies by institution and account type. You can:
+
+- Search using the institution's full name or web address.
+- Try again after the institution resolves an outage.
+- Add the account manually.
+- Export transactions from the institution and import a CSV.
+
+<Card title="Fix a bank-sync problem" icon="refresh-cw" href="/troubleshooting/bank-sync">
+  Diagnose delayed transactions, reconnect requests, and failed refreshes.
+</Card>
+
+## Privacy and security
+
+Read Miyo's [Privacy Policy](https://joinmiyo.com/privacy) and [Security page](https://joinmiyo.com/security) for the current provider, retention, encryption, and contact details.

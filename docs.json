@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "palm",
-  "name": "Miyo Help",
+  "name": "Miyo Help Center",
   "description": "Practical guides for managing money on your own or with your household in Miyo.",
   "colors": {
     "primary": "#7C3AED",
@@ -21,79 +21,131 @@
     "codeblocks": "system"
   },
   "navigation": {
-    "pages": [
+    "groups": [
       {
         "group": "Start here",
-        "icon": "sparkles",
+        "icon": "house",
         "pages": [
           "index",
           "getting-started/quickstart",
-          "getting-started/navigate-miyo"
+          "getting-started/navigate-miyo",
+          "getting-started/choose-your-first-data-path"
         ]
       },
       {
-        "group": "Accounts and transactions",
+        "group": "Accounts",
         "icon": "landmark",
         "pages": [
           "accounts/connect-and-manage-accounts",
-          "transactions/manage-transactions",
-          "transactions/import-transactions"
+          "accounts/connect-a-bank",
+          "accounts/add-a-manual-account",
+          "accounts/manage-linked-institutions"
         ]
       },
       {
-        "group": "Plan your money",
-        "icon": "chart-pie",
+        "group": "Transactions",
+        "icon": "receipt-text",
+        "pages": [
+          "transactions/manage-transactions",
+          "transactions/review-and-categorize",
+          "transactions/import-transactions",
+          "transactions/import-a-csv"
+        ]
+      },
+      {
+        "group": "Budget and goals",
+        "icon": "wallet-cards",
         "pages": [
           "budgets/overview",
           "budgets/choose-budget-mode",
           "budgets/create-and-manage-budget",
+          "planning/monthly-budget",
           "budgets/category-targets",
+          "planning/category-targets",
+          "planning/funding-styles",
           "goals/create-savings-goal",
+          "planning/savings-goals"
+        ]
+      },
+      {
+        "group": "Insights and payoff",
+        "icon": "chart-no-axes-combined",
+        "pages": [
+          "insights/spending-and-reports",
           "recurring/review-recurring",
-          "debt/debt-workspace"
+          "insights/recurring-payments",
+          "debt/debt-workspace",
+          "insights/debt-payoff"
         ]
       },
       {
         "group": "Household and privacy",
-        "icon": "shield-check",
+        "icon": "users",
         "pages": [
           "household/setup-household",
+          "households/invite-a-partner",
           "household/account-visibility",
+          "households/privacy-controls",
           "privacy/privacy-center",
           "household/money-date"
         ]
       },
       {
-        "group": "Settings and support",
-        "icon": "life-buoy",
+        "group": "Account and security",
+        "icon": "shield-check",
         "pages": [
           "settings/security-and-mfa",
+          "account/secure-your-account",
           "settings/notifications",
-          "support/troubleshooting",
-          "support/faq",
-          "support/contact"
+          "account/manage-your-data"
         ]
       },
       {
-        "group": "Changelog",
+        "group": "Troubleshooting and support",
+        "icon": "life-buoy",
+        "pages": [
+          "support/troubleshooting",
+          "troubleshooting/bank-sync",
+          "troubleshooting/imports-and-duplicates",
+          "support/faq",
+          "support/contact",
+          "support/contact-support"
+        ]
+      },
+      {
+        "group": "What's new",
         "icon": "megaphone",
         "pages": [
           "changelog"
         ]
       }
-    ]
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Miyo",
+          "href": "https://joinmiyo.com",
+          "icon": "arrow-up-right"
+        },
+        {
+          "anchor": "Privacy",
+          "href": "https://joinmiyo.com/privacy",
+          "icon": "shield"
+        }
+      ]
+    }
   },
   "redirects": [
     {
       "source": "/goals/funding-styles",
-      "destination": "/budgets/category-targets"
+      "destination": "/planning/funding-styles"
     }
   ],
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:support@joinmiyo.com"
+        "label": "Contact support",
+        "href": "/support/contact-support"
       }
     ],
     "primary": {
@@ -107,12 +159,16 @@
       "copy",
       "view",
       "chatgpt",
-      "claude"
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
     ]
   },
   "footer": {
     "socials": {
-      "website": "https://joinmiyo.com"
+      "github": "https://github.com/patricknguyendev/MiyoWeb"
     },
     "links": [
       {
@@ -146,7 +202,7 @@
         "items": [
           {
             "label": "Contact support",
-            "href": "mailto:support@joinmiyo.com"
+            "href": "/support/contact-support"
           },
           {
             "label": "Troubleshooting",
@@ -155,5 +211,8 @@
         ]
       }
     ]
+  },
+  "seo": {
+    "indexing": "all"
   }
 }

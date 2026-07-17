@@ -1,0 +1,59 @@
+---
+title: "Import a CSV"
+description: "Import bank transactions into Miyo from a CSV file, map the required columns, choose a destination account, and understand duplicate or skipped rows."
+icon: "file-up"
+---
+
+CSV import adds a file of transactions to one Miyo account. It works well for an unsupported bank, a manual workflow, or historical data that a linked connection did not provide.
+
+## Prepare the file
+
+- Export transactions as CSV from your financial institution.
+- Keep the file at or below 4 MB and 10,000 rows.
+- Do not combine different financial accounts in one file.
+- Keep the original file until you have reviewed the import result.
+
+## Import transactions
+
+<Steps>
+  <Step title="Open the importer">
+    Open **Transactions** and select **Import CSV**.
+  </Step>
+  <Step title="Select an account">
+    Choose the Miyo account that should own every transaction in the file, then select **Continue**.
+
+    If the account does not exist, add a [manual account](/accounts/add-a-manual-account) first.
+  </Step>
+  <Step title="Choose a bank format">
+    Leave **Bank Format** on **Auto-detect** first. If Miyo cannot recognize the columns, return and select the matching institution format.
+  </Step>
+  <Step title="Upload the CSV">
+    Drag the file into the upload area or select it from your device, then choose **Import Transactions**.
+  </Step>
+  <Step title="Read the result">
+    The completion screen separates **Imported**, **Duplicates**, and **Skipped** rows. Save these counts if the result is unexpected.
+  </Step>
+  <Step title="Review the imported activity">
+    Select **View Transactions**, filter to the destination account, and verify dates, signs, descriptions, and categories.
+  </Step>
+</Steps>
+
+## What the result means
+
+| Result | Meaning |
+| --- | --- |
+| **Imported** | Miyo created a new transaction |
+| **Duplicates** | A matching date, amount, and description already existed, so Miyo did not create another copy |
+| **Skipped** | The row was empty, invalid, unsupported, or could not be safely converted |
+
+<Warning>
+  Import into the wrong account can make account history and reports misleading. Stop after the result screen and contact support if a large file went to the wrong place.
+</Warning>
+
+## Reimporting the same file
+
+Miyo checks for duplicates, so reimporting the same file should not create a second copy of every matching row. Small changes in a bank export can make a row look new, though, so always review the duplicate count and recent activity.
+
+<Card title="Fix an import problem" icon="triangle-alert" href="/troubleshooting/imports-and-duplicates">
+  Troubleshoot columns, signs, duplicate counts, and the wrong destination account.
+</Card>
