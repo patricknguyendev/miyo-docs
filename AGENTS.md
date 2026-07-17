@@ -1,33 +1,45 @@
-> **First-time setup**: Customize this file for your project. Prompt the user to customize this file for their project.
-> For Mintlify product knowledge (components, configuration, writing standards),
-> install the Mintlify skill: `npx skills add https://mintlify.com/docs`
+# Miyo documentation instructions
 
-# Documentation project instructions
+## Audience and purpose
 
-## About this project
+This repository is the customer-facing Miyo Help Center. Help a customer finish a task, understand a money concept, protect their privacy, or recover from a problem.
 
-- This is a documentation site built on [Mintlify](https://mintlify.com)
-- Pages are MDX files with YAML frontmatter
-- Configuration lives in `docs.json`
-- Use the Mintlify MCP server, `https://mcp.mintlify.com`, to edit content and settings via MCP
-- Use the Mintlify docs MCP server, `https://www.mintlify.com/docs/mcp`, to query information about using Mintlify via MCP
+## Source of truth
+
+- Confirm behavior against the current `main` branch of `patricknguyendev/MiyoWeb`.
+- Prefer user-visible labels and states from the product UI over internal planning documents.
+- If a capability is behind a feature flag, entitlement, private beta, or provider approval, say so clearly or omit it.
+- Never document an unmerged plan as available product behavior.
 
 ## Terminology
 
-{/* Add product-specific terms and preferred usage */}
-{/* Example: Use "workspace" not "project", "member" not "user" */}
+- Use **Miyo**, not Imperium.
+- Use **household** for the shared space and **partner** for the other household member.
+- Use **linked account** for an account connected through Plaid.
+- Use **manual account** for an account maintained by the customer.
+- Use **monthly budget** for category planning and **savings goal** for longer-term saving.
 
-## Style preferences
+## Writing style
 
-{/* Add any project-specific style rules below */}
-
-- Use active voice and second person ("you")
-- Keep sentences concise — one idea per sentence
-- Use sentence case for headings
-- Bold for UI elements: Click **Settings**
-- Code formatting for file names, commands, paths, and code references
+- Use active voice and second person.
+- Lead with the outcome, then give the shortest reliable path.
+- Use sentence case for headings.
+- Bold exact UI labels, such as **Connect Bank**.
+- Put prerequisites before steps and expected results after them.
+- Explain financial calculations with a concrete example.
+- Avoid marketing language, implementation details, and generic conclusions.
 
 ## Content boundaries
 
-{/* Define what should and shouldn't be documented */}
-{/* Example: Don't document internal admin features */}
+- Do not publish admin workflows, secrets, internal endpoints, launch controls, or incident procedures.
+- Do not present Miyo as a bank, adviser, lender, broker, or money-movement service.
+- Do not promise that balances or transactions are always current; tell customers to verify important information with their financial institution.
+- Direct privacy, security, and legal questions to the official Miyo pages and contact addresses.
+
+## Mintlify conventions
+
+- Every page needs `title` and `description` frontmatter.
+- Use root-relative internal links without file extensions.
+- Add every customer-discoverable page to `docs.json`.
+- Use built-in Mintlify components where they improve scanning.
+- Run `mint validate`, `mint broken-links`, and `mint a11y` before publishing.

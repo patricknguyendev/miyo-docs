@@ -1,0 +1,43 @@
+---
+title: "Troubleshoot CSV imports"
+description: "Fix unsupported columns, duplicate counts, amount signs, and wrong destinations."
+icon: "file-warning"
+---
+
+Keep the original CSV and the import-result counts until the destination account looks correct.
+
+## Miyo cannot read the file
+
+- Confirm the file ends in `.csv`, not `.xlsx`, `.pdf`, or `.ofx`.
+- Keep it below 4 MB and 10,000 rows.
+- Export a new file directly from the institution instead of resaving it in a text editor.
+- Choose the matching **Bank Format** instead of **Auto-detect**.
+- If the file is too large, split it into non-overlapping date ranges.
+
+## Income and expenses are reversed
+
+Bank exports do not use one universal sign convention. Stop before importing more files, then retry with the institution-specific format. After import, filter to the destination account and compare several deposits and purchases with the statement.
+
+## The duplicate count is unexpected
+
+Miyo compares identifying transaction details such as date, amount, and description. A bank can change a posted description or date, causing a previously seen transaction to look new.
+
+<Steps>
+  <Step title="Filter to the account and date">
+    Open **Transactions** and narrow the list to the imported account and file period.
+  </Step>
+  <Step title="Compare matching amounts">
+    Look for rows with the same amount on nearby dates and compare their descriptions.
+  </Step>
+  <Step title="Remove only confirmed duplicates">
+    Delete an individual transaction only after confirming that it is not a separate purchase, pending-to-posted change, refund, or fee.
+  </Step>
+</Steps>
+
+## The file went to the wrong account
+
+Stop importing. Record the destination account, file name, approximate import time, and **Imported / Duplicates / Skipped** counts. Contact support before deleting a large batch one row at a time.
+
+<Card title="Contact Miyo support" icon="life-buoy" href="/support/contact-support">
+  Send a useful, privacy-safe support report.
+</Card>

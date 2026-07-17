@@ -1,53 +1,117 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "theme": "palm",
+  "name": "Miyo Help Center",
+  "description": "Practical guides for managing your money privately with Miyo.",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#7C3AED",
+    "light": "#A78BFA",
+    "dark": "#7C3AED"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo/miyo-mark.png",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
   "navigation": {
-    "pages": [
+    "groups": [
       {
-        "group": "Getting Started",
+        "group": "Start here",
+        "icon": "house",
         "pages": [
           "index",
-          "quickstart"
+          "getting-started/quickstart",
+          "getting-started/choose-your-first-data-path"
+        ]
+      },
+      {
+        "group": "Accounts",
+        "icon": "landmark",
+        "pages": [
+          "accounts/connect-a-bank",
+          "accounts/add-a-manual-account",
+          "accounts/manage-linked-institutions"
+        ]
+      },
+      {
+        "group": "Transactions",
+        "icon": "receipt-text",
+        "pages": [
+          "transactions/review-and-categorize",
+          "transactions/import-a-csv"
+        ]
+      },
+      {
+        "group": "Plan your money",
+        "icon": "wallet-cards",
+        "pages": [
+          "planning/monthly-budget",
+          "planning/category-targets",
+          "planning/funding-styles",
+          "planning/savings-goals"
+        ]
+      },
+      {
+        "group": "Understand your money",
+        "icon": "chart-no-axes-combined",
+        "pages": [
+          "insights/spending-and-reports",
+          "insights/recurring-payments",
+          "insights/debt-payoff"
+        ]
+      },
+      {
+        "group": "Households and privacy",
+        "icon": "users",
+        "pages": [
+          "households/invite-a-partner",
+          "households/privacy-controls"
+        ]
+      },
+      {
+        "group": "Account and security",
+        "icon": "shield-check",
+        "pages": [
+          "account/secure-your-account",
+          "account/manage-your-data"
+        ]
+      },
+      {
+        "group": "Troubleshooting",
+        "icon": "life-buoy",
+        "pages": [
+          "troubleshooting/bank-sync",
+          "troubleshooting/imports-and-duplicates",
+          "support/contact-support"
         ]
       }
     ],
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Miyo",
+          "href": "https://joinmiyo.com",
+          "icon": "arrow-up-right"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Privacy",
+          "href": "https://joinmiyo.com/privacy",
+          "icon": "shield"
         }
       ]
     }
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Contact support",
+        "href": "/support/contact-support"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Open Miyo",
+      "href": "https://joinmiyo.com/dashboard"
     }
   },
   "contextual": {
@@ -64,9 +128,10 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/patricknguyendev/MiyoWeb"
     }
+  },
+  "seo": {
+    "indexing": "all"
   }
 }

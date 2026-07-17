@@ -1,0 +1,47 @@
+---
+title: "Manage, export, or delete your data"
+description: "Review data controls before disconnecting institutions or deleting your Miyo account."
+icon: "database-zap"
+---
+
+Different controls have different effects. Choose the narrowest action that matches what you want to change.
+
+| Action | Stops future bank sync | Removes imported transactions | Removes your Miyo access |
+| --- | --- | --- | --- |
+| Disconnect institution | Yes | Not by itself | No |
+| Reset linked-institution data, when offered | Already disconnected | Removes the selected local institution data | No |
+| Delete an individual transaction | No | Removes that transaction from normal views | No |
+| Delete Miyo account | Yes | Deactivates access and starts the account-deletion process | Yes |
+
+## Export transactions
+
+Open **Transactions** and select **Export CSV** to download transactions you own. Store the export securely because it can contain sensitive descriptions, amounts, dates, categories, and notes.
+
+## Disconnect a bank
+
+Use **Settings → Linked accounts → Disconnect institution** to revoke the live Plaid connection and stop future refreshes. Previously imported records can remain until you remove the local data or complete account deletion.
+
+## Delete your Miyo account
+
+<Steps>
+  <Step title="Export anything you need">
+    Download your transaction export and note any planning information you need to retain outside Miyo.
+  </Step>
+  <Step title="Review household impact">
+    If you own a household, review the remaining member and shared information before continuing.
+  </Step>
+  <Step title="Open the deletion dialog">
+    Open **Settings → Security**, choose **Delete Miyo account**, and read every consequence.
+  </Step>
+  <Step title="Type DELETE">
+    Enter `DELETE` exactly, then select **Delete account**.
+  </Step>
+</Steps>
+
+Deleting immediately deactivates the account, revokes sessions, disables app access, and removes live connected-account access. Miyo can retain limited records when required for audit, security, legal, tax, backup, fraud-prevention, or compliance purposes.
+
+<Warning>
+  Account deletion cannot be undone from the app. Contact [privacy@joinmiyo.com](mailto:privacy@joinmiyo.com) before deleting if you need a data-access, correction, export, or specific deletion request.
+</Warning>
+
+Read the current [Miyo Privacy Policy](https://joinmiyo.com/privacy) for retention and rights details.

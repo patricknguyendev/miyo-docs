@@ -1,0 +1,49 @@
+---
+title: "Troubleshoot bank sync"
+description: "Resolve delayed transactions, reconnect requests, and institution errors."
+icon: "refresh-cw"
+---
+
+Bank data can be delayed by the institution, Plaid, or a connection that needs new consent. Start with the least disruptive action.
+
+## Choose the right action
+
+<Steps>
+  <Step title="Check whether bank sync is available">
+    If the button says **Bank Sync Pending**, the connection feature is not currently available for your account. Use manual accounts or CSV import rather than repeating the connection flow.
+  </Step>
+  <Step title="Verify your Miyo email">
+    Complete email verification if Miyo asks before opening Plaid Link.
+  </Step>
+  <Step title="Check the institution status">
+    Open **Settings → Linked accounts**. Note the institution status, last sync time, and any error message.
+  </Step>
+  <Step title="Use Sync now once">
+    Select **Sync now**, wait for the request to finish, then refresh **Transactions**. Repeated clicks do not make the institution post data sooner.
+  </Step>
+  <Step title="Reconnect when asked">
+    Use **Reconnect** for an expired login, changed password, institution consent request, or new verification challenge.
+  </Step>
+  <Step title="Compare with the institution">
+    Check whether the missing item is still pending at the bank. Posted details can differ from the pending version.
+  </Step>
+</Steps>
+
+## Avoid duplicate accounts
+
+Do not create a second connection for the same institution only because a sync is delayed. If Miyo suggests merging a manual and linked account, compare their names, balances, and history before accepting.
+
+## When to disconnect
+
+Disconnect when you no longer want Miyo to refresh the institution, not as the first fix for a temporary outage. Disconnecting applies to every account under that institution and does not erase existing imported transactions.
+
+## Contact support
+
+Send [support@joinmiyo.com](mailto:support@joinmiyo.com):
+
+- Institution name and affected Miyo account name.
+- Approximate time of the last successful sync.
+- Exact error text or a screenshot with sensitive details hidden.
+- Whether **Sync now** or **Reconnect** was attempted once.
+
+Never send bank credentials, a full account number, access tokens, or one-time codes.
