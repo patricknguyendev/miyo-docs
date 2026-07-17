@@ -1,0 +1,98 @@
+---
+title: "Set a budget category target"
+description: "Set a Miyo budget category target using Add another or Refill available to control how much money is assigned to the category each period."
+sidebarTitle: "Set a category target"
+keywords: ["budget target", "category target", "add another", "refill available", "available balance"]
+---
+
+A budget category target guides how much money to assign to a spending category. It is for recurring planning, not for measuring progress toward a savings finish line.
+
+<Columns cols={2}>
+  <Card title="Add another">
+    Assign the full target again each period. Money already available does not reduce the next assignment.
+  </Card>
+  <Card title="Refill available">
+    Assign only the shortfall needed to restore the category's available balance to the target.
+  </Card>
+</Columns>
+
+<Info>
+  Remember it this way: **Add another controls how much goes in. Refill available controls how much should remain.**
+</Info>
+
+## See the difference with one category
+
+Suppose **Car repairs** has a monthly target of **\$1,000**. At the start of the next month, **\$200 remains available**.
+
+| Behavior | Available now | Miyo suggests | Available after assignment |
+| --- | ---: | ---: | ---: |
+| **Add another** | \$200 | \$1,000 | \$1,200 |
+| **Refill available** | \$200 | \$800 | \$1,000 |
+
+The same \$1,000 entry means two different instructions:
+
+- **Add another:** "Assign another \$1,000 this month."
+- **Refill available:** "Bring this category back to \$1,000 available."
+
+## Choose the behavior that matches your intent
+
+<Tabs>
+  <Tab title="Add another">
+    Choose **Add another** when:
+
+    - You want to assign a fixed amount repeatedly.
+    - Money left over should accumulate.
+    - A full category should still receive the next period's amount.
+
+    Example: **"Add \$500 to travel every month."**
+  </Tab>
+  <Tab title="Refill available">
+    Choose **Refill available** when:
+
+    - You want to maintain a reserve at a specific level.
+    - Money left over should reduce the next assignment.
+    - Assignments should pause while the available balance meets or exceeds the target.
+
+    Example: **"Keep \$1,000 available for car repairs."**
+  </Tab>
+</Tabs>
+
+## Set the target
+
+<Steps>
+  <Step title="Open the category target">
+    From **Budget**, choose **Monthly budget**, find the expense category, and select **Add recurring target**.
+  </Step>
+  <Step title="Enter the target amount and cadence">
+    For a weekly, monthly, or yearly cadence, the amount describes that period's recurring assignment or available-balance target.
+  </Step>
+  <Step title="Choose how to handle money left over">
+    Select **Add another** or **Refill available** using the comparison above.
+  </Step>
+  <Step title="Save and review the category">
+    Review the suggested assignment and the category's available amount before relying on the result.
+  </Step>
+</Steps>
+
+## Use By a date for a category deadline
+
+Choose **By a date** when the category should build to one available amount by a deadline. Miyo uses the target amount, current available balance, and date to estimate the needed pace. Add/refill behavior does not apply to a by-date target.
+
+## Use a savings goal for a total finish line
+
+If your intent is **"Save \$10,000 total for a vacation,"** create a [savings goal](/goals/create-savings-goal). A \$200 contribution then produces \$200 of \$10,000 in progress, regardless of the week, month, or year.
+
+<AccordionGroup>
+  <Accordion title="What if nothing is available?">
+    Both recurring behaviors suggest the full target amount because the entire amount is missing.
+  </Accordion>
+  <Accordion title="What if the category already has the target amount?">
+    **Add another** still suggests the full recurring amount. **Refill available** suggests \$0 until the available balance falls below the target.
+  </Accordion>
+  <Accordion title="What if the available balance is above the target?">
+    **Refill available** suggests \$0 and does not remove the extra money. **Add another** continues to suggest the recurring amount.
+  </Accordion>
+  <Accordion title="Does a target move money between bank accounts?">
+    No. A target changes planning guidance inside Miyo. It does not transfer money or make a payment.
+  </Accordion>
+</AccordionGroup>

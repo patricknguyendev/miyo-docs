@@ -1,6 +1,8 @@
 ---
 title: "Set up Miyo"
-description: "Go from a new account to a useful monthly money plan."
+description: "Set up Miyo from a new account, add financial data, review transactions, and build a monthly plan you recognize."
+sidebarTitle: "Set up Miyo"
+keywords: ["getting started", "setup", "first account"]
 icon: "rocket"
 ---
 
@@ -8,9 +10,14 @@ You can start using Miyo by yourself. A household and bank connection are option
 
 ## Before you begin
 
-You need a Miyo account and access to the email address you used to sign up. If you plan to import data, also have either a CSV export from your bank or a YNAB export ready.
+You need a Miyo account and access to the email address you used to sign up. If you plan to import data, also have either a CSV export from your bank or a supported YNAB export ready.
 
 <Steps>
+  <Step title="Choose how you use Miyo">
+    During setup, choose **On my own** for a private individual workspace or **With a partner / household** when you plan to collaborate.
+
+    You can review this choice later from your household settings.
+  </Step>
   <Step title="Add your first financial account">
     Open **Accounts**, then choose one path:
 
@@ -32,13 +39,18 @@ You need a Miyo account and access to the email address you used to sign up. If 
     Open **Transactions**. Search for recent activity, assign categories to uncategorized items, and correct any transfer, income, refund, or expense that is classified incorrectly.
   </Step>
   <Step title="Create your monthly budget">
-    Open **Plan your money**, select **Monthly budget**, and add an amount for the categories you want to plan. Start with required bills and everyday spending; you can refine the plan later.
+    Open **Budget**, select **Monthly budget**, and choose the mode that matches the structure you want:
+
+    - **Simple** uses monthly category limits.
+    - **Advanced** uses rollover envelopes, groups, and savings envelopes.
+
+    Add amounts for the categories you want to plan. Start with required bills and everyday spending; you can refine the plan later.
   </Step>
   <Step title="Add a savings goal">
     Switch to **Savings goals** and create a goal for a longer-term priority such as an emergency fund or vacation. New goals start at \$0, so record any amount you already saved as a contribution after creating the goal.
   </Step>
-  <Step title="Choose what happens next">
-    Stay solo, or open **Settings → Household** to invite a partner. Joining a household does not make every account visible automatically; review each account in the **Privacy Center**.
+  <Step title="Review privacy before sharing">
+    Stay solo, or open **Settings → Household** to invite a partner. Joining a household does not make every account visible automatically. Open **Privacy** and review every account's visibility before relying on household totals.
   </Step>
 </Steps>
 
@@ -53,6 +65,14 @@ You need a Miyo account and access to the email address you used to sign up. If 
 - Update manual account balances when statements arrive.
 - Revisit your monthly budget when income or bills change.
 
-<Card title="Learn the dashboard" icon="layout-dashboard" href="/insights/spending-and-reports">
-  See how Miyo turns accounts and transactions into spending summaries.
-</Card>
+<Columns cols={3}>
+  <Card title="Learn the dashboard" icon="layout-dashboard" href="/getting-started/navigate-miyo">
+    Find the main areas for accounts, activity, planning, privacy, and settings.
+  </Card>
+  <Card title="Compare budget modes" icon="chart-pie" href="/budgets/choose-budget-mode">
+    Choose between Simple monthly limits and Advanced rollover envelopes.
+  </Card>
+  <Card title="Set up a household" icon="users" href="/household/setup-household">
+    Invite another person and understand what changes after they join.
+  </Card>
+</Columns>

@@ -1,18 +1,20 @@
 # Miyo Help Center
 
-Customer-facing documentation for [Miyo](https://joinmiyo.com), a privacy-first household finance app.
+Customer-facing product documentation for [Miyo](https://joinmiyo.com), built with Mintlify.
 
-## Preview locally
+## Local development
 
-Mintlify's CLI requires a current Node.js release. From this repository:
+Use a current Node.js release, then start the preview from this repository root:
 
 ```powershell
 npx mint dev
 ```
 
-The preview opens at `http://localhost:3000` by default.
+The preview is available at `http://localhost:3000` by default.
 
-## Validate changes
+## Validation
+
+Run these checks before publishing:
 
 ```powershell
 npx mint validate
@@ -22,13 +24,14 @@ npx mint a11y
 
 ## Content rules
 
-- Write for Miyo customers, not Miyo engineers.
-- Confirm product behavior against the current MiyoWeb `main` branch before documenting it.
-- Use the exact labels customers see in the app.
-- Do not describe a feature-flagged capability as generally available.
-- Keep internal implementation, launch gates, and operational runbooks in MiyoWeb.
-- Update the relevant help page in the same product change that alters a customer workflow.
+- Write for Miyo customers, not internal operators or developers.
+- Confirm product behavior against the current MiyoWeb `main` branch.
+- Use second person, active voice, and the exact labels customers see in the app.
+- Do not document unshipped or flag-gated behavior as generally available.
+- Mark uncertain behavior with an MDX TODO comment.
+- Never include real financial data, credentials, tokens, or customer information.
+- Update the relevant help page when a product change alters a customer workflow.
 
 ## Publishing
 
-Connect this repository to Mintlify, then configure a custom domain such as `help.joinmiyo.com`. Changes to the default branch deploy through Mintlify after the repository integration is active.
+Mintlify deploys previews from pull requests and publishes changes from the connected default branch.
