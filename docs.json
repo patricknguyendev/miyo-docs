@@ -48,6 +48,8 @@
         "pages": [
           "transactions/manage-transactions",
           "transactions/review-and-categorize",
+          "settings/categories",
+          "settings/transaction-rules",
           "transactions/import-transactions",
           "transactions/import-a-csv"
         ]
