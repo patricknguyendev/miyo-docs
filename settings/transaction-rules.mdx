@@ -1,0 +1,83 @@
+---
+title: "Create and manage transaction rules"
+description: "Create Premium Miyo transaction rules that match activity by name, amount, account, type, or date and apply consistent categories, names, tags, or budget treatment."
+icon: "wand-sparkles"
+tag: "Premium"
+---
+
+Transaction rules automate repeatable cleanup. A rule finds matching transactions and can change their category, rename the merchant, include or exclude them from budgets, or apply an existing tag.
+
+<Info>
+  **Transaction Rules** is a Premium feature. If Settings shows the Premium message instead of the rule builder, the feature is not included in your current membership.
+</Info>
+
+## Before you create a rule
+
+- Review a few real transactions that should match.
+- Create the destination [category](/settings/categories) or tag first.
+- Decide whether the rule should affect existing transactions, future transactions, or both.
+- Use the narrowest conditions that describe the activity.
+
+## Create a rule
+
+<Steps>
+  <Step title="Open Transaction Rules">
+    Open **Settings → Transaction Rules**, then select **Add Rule**.
+  </Step>
+  <Step title="Choose at least one condition">
+    Match on one or more available fields:
+
+    - **Name contains** for merchant or description text.
+    - **Amount is** with equal to, greater than, or less than.
+    - **Transaction type** for expense, income, transfer, refund, or adjustment.
+    - **Account is** to limit the rule to one account.
+    - **Date is** for one date, on or after a date, or on or before a date.
+  </Step>
+  <Step title="Choose at least one action">
+    Select what Miyo should do:
+
+    - **Change Category**.
+    - **Rename Merchant**.
+    - **Exclude from Budget** or include it again.
+    - **Apply Tag** when you already have tags available.
+  </Step>
+  <Step title="Review matching transactions">
+    Use the preview to confirm both the number of matches and the specific transactions. Tighten the conditions when unrelated activity appears.
+  </Step>
+  <Step title="Save the rule">
+    Creating a rule applies it to the transactions shown as matches. Review the confirmation count, then spot-check the updated activity in **Transactions**.
+  </Step>
+</Steps>
+
+<Warning>
+  A broad name or amount condition can change many existing transactions as soon as you create the rule. Do not save until the preview contains only the activity you intend to update.
+</Warning>
+
+## Understand rule order
+
+Rules run from top to bottom, and the first matching rule wins. Use the up and down controls to put a narrow exception above a broader rule.
+
+<Tip>
+  Put a rule for one account or exact amount above a general merchant-name rule when both could match the same transaction.
+</Tip>
+
+## Apply rules to existing activity
+
+Select **Apply rules now** to run the current ordered rule list against existing transactions. Review recent activity afterward because this action can update multiple records.
+
+## Edit, delete, or reset rules
+
+- Use **Edit** to change a rule's conditions or actions.
+- Use **Delete** to stop one rule from matching again.
+- Select **Reset all rules** to remove the complete rule list.
+
+Deleting or resetting rules does not reverse category or merchant changes already applied to transactions. Correct those records from **Transactions** when needed.
+
+<Columns cols={2}>
+  <Card title="Manage categories" icon="tags" href="/settings/categories">
+    Create the categories a rule can assign.
+  </Card>
+  <Card title="Review transactions" icon="receipt-text" href="/transactions/manage-transactions">
+    Verify matches and correct activity after rules run.
+  </Card>
+</Columns>
